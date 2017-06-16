@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 """
 @author: Yijia Zhang
 
@@ -12,7 +12,7 @@ finished in 75 seconds.
 
 This is the development version.
 """
-n = 1234567
+n = 12345
 
 import math
 import time
@@ -114,6 +114,7 @@ def thieveImpr(n):
         i = i + 2
     return i - 2
 
+print('start...')
     
 nth = thieveImpr(n)
 print('the %d-th prime number is: %d' % (n, nth) )
