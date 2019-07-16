@@ -12,7 +12,7 @@ finished in 75 seconds.
 
 This is the development version.
 """
-n = 12345
+n = 1234
 
 import math
 import time
