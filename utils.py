@@ -8,7 +8,7 @@ def unix2string(unixTime, timezone='US/Pacific'):
     Convert unix time into time string at a certain timezone.
     '''
     pacific = pytz.timezone(timezone)
-    thisTime = datetime.datetime.utcfromtimestamp(unixTime).replace(tzinfo=datetime.timezone.utc).astimezone(tz=pacific)
+    thisTime = pytz.utc.localize(datetime.datetime.utcfromtimestamp(unixTime)).astimezone(tz=pacific)
     timestr = thisTime.strftime('%Y-%m-%d %H:%M:%S')
     return timestr
 
