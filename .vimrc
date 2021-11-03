@@ -9,3 +9,4 @@ set expandtab
 set encoding=utf-8
 set showmatch
 set cursorline
+set hlsearch
